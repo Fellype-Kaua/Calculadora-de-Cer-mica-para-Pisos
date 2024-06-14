@@ -1,3 +1,5 @@
+import { resultSection } from "./calculations.js"; // Importe resultSection corretamente
+
 export let validationOK = false;
 
 export const roomWidth = document.getElementById('roomWidth');
@@ -12,6 +14,7 @@ export function checkInput(input, fieldName, errorElementId) {
         labelError.style.display = 'block';
         input.classList.add('is-invalid');
         validationOK = false;
+        resultSection.classList.replace('d-block', 'd-none');
     } else {
         labelError.style.display = 'none';
         input.classList.remove('is-invalid');

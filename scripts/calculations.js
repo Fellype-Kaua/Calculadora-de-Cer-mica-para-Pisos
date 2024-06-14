@@ -1,5 +1,7 @@
 import { ceramicsPerBox, ceramicsSize, roomLength, roomWidth, validationOK } from "./validation.js";
 
+
+export const resultSection = document.getElementById('resultSection');
 function result(roomAreaValue, ceramicsAreaValue, ceramicsQtdValue, ceramicsBoxQtdValue) {
   const roomSize = document.getElementById("roomSize");
   const ceramicsUnitSize = document.getElementById('ceramicsUnitSize');
@@ -8,7 +10,8 @@ function result(roomAreaValue, ceramicsAreaValue, ceramicsQtdValue, ceramicsBoxQ
   roomSize.innerText = roomAreaValue.toFixed(2);
   ceramicsUnitSize.innerText = ceramicsAreaValue.toFixed(2);
   ceramicsQtd.innerText = ceramicsQtdValue;
-  ceramicsBoxQtd.innerText = ceramicsBoxQtdValue
+  ceramicsBoxQtd.innerText = ceramicsBoxQtdValue;
+  resultSection.classList.replace('d-none', 'd-block');
 }
 
 function calcArea(item1, item2) {

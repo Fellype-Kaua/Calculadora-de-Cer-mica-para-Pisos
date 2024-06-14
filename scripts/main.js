@@ -6,10 +6,10 @@ const calcBtn = document.getElementById('calcBtn');
 
 
 function checkAllFields() {
-    checkInput(roomWidth, "Largura da Sala", "roomWidthError");
-    checkInput(roomLength, "Comprimento da Sala", "roomLengthError");
-    checkInput(ceramicsSize, "Tamanho das Cerâmicas", "ceramicsSizeError");
-    checkInput(ceramicsPerBox, "Cerâmicas por Caixa", "ceramicsPerBoxError");
+    checkInput(roomWidth, "Largura do cômodo", "roomWidthError");
+    checkInput(roomLength, "Comprimento do cômodo", "roomLengthError");
+    checkInput(ceramicsSize, "Tamanho da Cerâmica", "ceramicsSizeError");
+    checkInput(ceramicsPerBox, "Quantidade por caixa", "ceramicsPerBoxError");
 }
 
 calcBtn.addEventListener('click', checkAllFields);
